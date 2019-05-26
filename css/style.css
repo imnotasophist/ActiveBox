@@ -117,6 +117,7 @@ p {
     border-radius: 2px;
     font-family: 'Raleway', sans-serif;
     border: 0;
+    text-align: center;
     cursor: pointer;
     transition: background .1s linear;
 }
@@ -126,6 +127,9 @@ p {
 }
 .btn--red:hover {
     background-color: #dd3434;
+}
+.btn--long {
+    min-width: 280px;
 }
 /* Features 
 =================== */
@@ -273,6 +277,21 @@ p {
 
     transition: fill .1s linear;
 }
+.social--footer {
+    justify-content: center;
+}
+.social--footer .social__item {
+    background-color: transparent;
+    border-width: 2px;
+    border-color: #fff;
+    border-radius: 2px;
+}
+.social--footer .social__item:hover {
+    background-color: #fff;
+}
+.social--footer .social__icon {
+    fill: #fff;
+}
 /* Reviews
 ===================*/
 .reviews {
@@ -314,5 +333,69 @@ p {
     font-size: 13px;
     font-weight: 70;
     text-transform: uppercase;
+    color: #fff;
+}
+/* Download
+===================*/
+.download {
+    margin: 90px 0;
+    text-align: center;
+}
+.download__title {
+    font-size: 28px;
+    color: #2d3033;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+.download__text {
+    font-size: 13px;
+    color: #2d3033;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+/* Copyright
+===================*/
+.footer {
+    background-color: #3a3e64;
+}
+.footer__inner {
+    padding: 70px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer__block {
+    width: 33.333333%;
+    text-align: center;
+    padding: 0 15px;
+}
+.footer__title {
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 70;
+    color: #fff;
+    text-transform: uppercase;
+}
+.footer__address {
+    color: rgba(255, 255, 255, .5);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.footer__text {
+    color: rgba(255, 255, 255, .5);
+    font-size: 14px;
+    line-height: 1.5;
+}
+.copyright {
+    background-color: #313453;
+    padding: 20px 0;
+}
+.copyright__text {
+    text-align: center;
+    font-size: 14px;
+    color: #808080;
+}
+.copyright__text span {
     color: #fff;
 }

@@ -310,9 +310,17 @@ p {
     background-color: #53354a;
     overflow: hidden;
 }
+.reviews__slider {
+    height: 500px;
+    overflow: hidden;
+}
+.reviews__slider.slick-initialized {
+    height: auto;
+}
 .reviews__item {
     display: flex;
     flex-wrap: wrap;
+    overflow: hidden;
 }
 .reviews__photo {
     width: 50%;
@@ -346,6 +354,37 @@ p {
     font-weight: 70;
     text-transform: uppercase;
     color: #fff;
+}
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    padding: 0;
+    list-style: none;
+    padding: 0 0 10px;
+}
+.slick-dots li {
+ margin: 0 5px;
+}
+.slick-dots button {
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border-radius: 50%;
+    padding: 0;
+    font-size: 0;
+    color: transparent;
+    cursor: pointer;
+}
+.slick-dots button:focus {
+    outline: 0;
+}
+.slick-dots .slick-active button {
+    background-color: #dd3434;
 }
 /* Download
 ===================*/
@@ -457,6 +496,19 @@ p {
     /* Nav */
     .nav {
         display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: right;
+        position: absolute;
+        right: 0;
+        top: 100%;
+        background-color: #31344e;
+    }
+    .nav.show {
+        display: flex;
+    }
+    .nav__link {
+        padding: 9px 15px;
     }
     /* Burger */
     .burger {
